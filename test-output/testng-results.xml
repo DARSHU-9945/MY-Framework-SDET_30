@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="12" passed="1" failed="3" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[========db connection established+++++]]>
+    </line>
+    <line>
+      <![CDATA[================Browser launch succesfull=====]]>
+    </line>
+    <line>
+      <![CDATA[login successful]]>
+    </line>
+    <line>
+      <![CDATA[================Browser launch succesfull=====]]>
+    </line>
+    <line>
+      <![CDATA[login successful]]>
+    </line>
+    <line>
+      <![CDATA[========Browser close Succesfull=======]]>
+    </line>
+    <line>
+      <![CDATA[========logout Succesfull=======]]>
+    </line>
+    <line>
+      <![CDATA[========Browser close Succesfull=======]]>
+    </line>
+    <line>
+      <![CDATA[================Browser launch succesfull=====]]>
+    </line>
+    <line>
+      <![CDATA[================Browser launch succesfull=====]]>
+    </line>
+    <line>
+      <![CDATA[login successful]]>
+    </line>
+    <line>
+      <![CDATA[login successful]]>
+    </line>
+    <line>
+      <![CDATA[========Database close Succesfull=======]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-03-17T10:41:27 IST" name="Suite" finished-at="2022-03-17T10:44:49 IST" duration-ms="201791">
+    <groups>
+      <group name="smokeSuite">
+        <method signature="CreateContactWithUtilityPOM2withBaseclass.CreateContactWithUtilityTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" name="CreateContactWithUtilityTest" class="com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass"/>
+        <method signature="CreateOrgwithPOMwithBaseClass.CreateOrgWithutility()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" name="CreateOrgWithutility" class="com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass"/>
+      </group> <!-- smokeSuite -->
+      <group name="regressionSuite">
+        <method signature="CreateContactWithOrganizationUtilityTestPOM2withBaseclass.CreateContactWithUtilityTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" name="CreateContactWithUtilityTest" class="com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass"/>
+        <method signature="CreateOrganizationWithIndustryUtilityPOMwithBaseclass.CreateOrganizationWithIndustryUtility()[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" name="CreateOrganizationWithIndustryUtility" class="com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass"/>
+      </group> <!-- regressionSuite -->
+    </groups>
+    <test started-at="2022-03-17T10:41:27 IST" name="Test-Runner-1" finished-at="2022-03-17T10:44:49 IST" duration-ms="201786">
+      <class name="com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass">
+        <test-method is-config="true" signature="launchtheBrowser(java.lang.String)[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" started-at="2022-03-17T10:43:01 IST" name="launchtheBrowser" finished-at="2022-03-17T10:43:15 IST" duration-ms="14570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[================Browser launch succesfull=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" started-at="2022-03-17T10:43:15 IST" name="login" finished-at="2022-03-17T10:43:34 IST" duration-ms="18648" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateContactWithUtilityTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" started-at="2022-03-17T10:43:34 IST" name="CreateContactWithUtilityTest" finished-at="2022-03-17T10:44:36 IST" duration-ms="62197" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//span[@class='dvHeaderText']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//span[@class='dvHeaderText']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+at com.crm.ObjectRepository.OrganizationInfoPage.OrgNameInfo(OrganizationInfoPage.java:31)
+at com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass.CreateContactWithUtilityTest(CreateContactWithOrganizationUtilityTestPOM2withBaseclass.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactWithUtilityTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" started-at="2022-03-17T10:44:49 IST" name="logout" finished-at="2022-03-17T10:44:49 IST" duration-ms="55" status="FAIL">
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+at org.openqa.selenium.json.Json.toJson(Json.java:42)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+at com.crm.GenericLibrary.WebDriverUtility.mouseHover(WebDriverUtility.java:124)
+at com.crm.ObjectRepository.HomePage.signOutOfApp(HomePage.java:146)
+at com.crm.GenericLibrary.BaseClass.logout(BaseClass.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+at org.openqa.selenium.json.Json.toJson(Json.java:44)
+... 39 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+... 51 more
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Organization Name Already Exists!}
+  (Session info: chrome=99.0.4844.51): Organization Name Already Exists!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Deepthi\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 44b9185e5507c4308945c19285af7154
+*** Element info: {Using=xpath, value=//img[@src='themes/softed/images/user.PNG']}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.getWrappedElement(Unknown Source)
+at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+... 56 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass@1de5f259]" started-at="2022-03-17T10:44:49 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1647494089128" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.ContactsTests.CreateContactWithOrganizationUtilityTestPOM2withBaseclass -->
+      <class name="com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:41:27 IST" name="beforeTest" finished-at="2022-03-17T10:41:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchtheBrowser(java.lang.String)[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:41:27 IST" name="launchtheBrowser" finished-at="2022-03-17T10:41:35 IST" duration-ms="7219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[================Browser launch succesfull=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:41:35 IST" name="login" finished-at="2022-03-17T10:41:48 IST" duration-ms="12970" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateContactWithUtilityTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:41:48 IST" name="CreateContactWithUtilityTest" finished-at="2022-03-17T10:42:50 IST" duration-ms="62379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactWithUtilityTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:42:50 IST" name="logout" finished-at="2022-03-17T10:42:58 IST" duration-ms="8470" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========logout Succesfull=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:42:58 IST" name="closeBrowser" finished-at="2022-03-17T10:43:01 IST" duration-ms="2442" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========Browser close Succesfull=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass@194bcebf]" started-at="2022-03-17T10:44:49 IST" name="afterTest" finished-at="2022-03-17T10:44:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.crm.ContactsTests.CreateContactWithUtilityPOM2withBaseclass -->
+    </test> <!-- Test-Runner-1 -->
+    <test started-at="2022-03-17T10:41:27 IST" name="Test-Runner-2" finished-at="2022-03-17T10:44:48 IST" duration-ms="201656">
+      <class name="com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass">
+        <test-method is-config="true" signature="launchtheBrowser(java.lang.String)[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" started-at="2022-03-17T10:42:57 IST" name="launchtheBrowser" finished-at="2022-03-17T10:43:19 IST" duration-ms="22319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[================Browser launch succesfull=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" started-at="2022-03-17T10:43:19 IST" name="login" finished-at="2022-03-17T10:43:25 IST" duration-ms="5838" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateOrganizationWithIndustryUtility()[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" started-at="2022-03-17T10:43:25 IST" name="CreateOrganizationWithIndustryUtility" finished-at="2022-03-17T10:44:21 IST" duration-ms="56324" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //span[@class='dvHeaderText']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220313140707, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4300, moz:profile: C:\Users\Deepthi\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8eb05c5e-46f2-4fb6-b00c-a858f71f75dd
+*** Element info: {Using=xpath, value=//span[@class='dvHeaderText']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[@class='dvHeaderText']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220313140707, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4300, moz:profile: C:\Users\Deepthi\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8eb05c5e-46f2-4fb6-b00c-a858f71f75dd
+*** Element info: {Using=xpath, value=//span[@class='dvHeaderText']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.getText(Unknown Source)
+at com.crm.ObjectRepository.OrganizationInfoPage.OrgNameInfo(OrganizationInfoPage.java:31)
+at com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass.CreateOrganizationWithIndustryUtility(CreateOrganizationWithIndustryUtilityPOMwithBaseclass.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganizationWithIndustryUtility -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" started-at="2022-03-17T10:44:28 IST" name="logout" finished-at="2022-03-17T10:44:48 IST" duration-ms="20536" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: Sign Out
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220313140707, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4300, moz:profile: C:\Users\Deepthi\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8eb05c5e-46f2-4fb6-b00c-a858f71f75dd
+*** Element info: {Using=link text, value=Sign Out}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Sign Out
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RMSCL2B', ip: '192.168.86.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220313140707, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4300, moz:profile: C:\Users\Deepthi\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8eb05c5e-46f2-4fb6-b00c-a858f71f75dd
+*** Element info: {Using=link text, value=Sign Out}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at com.crm.ObjectRepository.HomePage.signOutOfApp(HomePage.java:147)
+at com.crm.GenericLibrary.BaseClass.logout(BaseClass.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass@70e9c95d]" started-at="2022-03-17T10:44:48 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1647494088990" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass -->
+      <class name="com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass">
+        <test-method is-config="true" signature="connectdatabase()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:41:27 IST" name="connectdatabase" finished-at="2022-03-17T10:41:27 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========db connection established+++++]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectdatabase -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:41:27 IST" name="beforeTest" finished-at="2022-03-17T10:41:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchtheBrowser(java.lang.String)[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:41:27 IST" name="launchtheBrowser" finished-at="2022-03-17T10:42:15 IST" duration-ms="48168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FIREFOX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[================Browser launch succesfull=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchtheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:42:15 IST" name="login" finished-at="2022-03-17T10:42:19 IST" duration-ms="3443" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateOrgWithutility()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:42:15 IST" name="CreateOrgWithutility" finished-at="2022-03-17T10:42:47 IST" duration-ms="31305" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[ScreenCapture path must not be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: ScreenCapture path must not be null or empty
+at com.aventstack.extentreports.util.Assert.notEmpty(Assert.java:12)
+at com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(ExtentTest.java:1074)
+at com.aventstack.extentreports.ExtentTest.addScreenCaptureFromPath(ExtentTest.java:1082)
+at com.crm.GenericLibrary.ListenerImplementationClass.onTestFailure(ListenerImplementationClass.java:67)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrgWithutility -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:42:52 IST" name="closeBrowser" finished-at="2022-03-17T10:42:57 IST" duration-ms="4759" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========Browser close Succesfull=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:44:48 IST" name="afterTest" finished-at="2022-03-17T10:44:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="closeDb()[pri:0, instance:com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass@2e3967ea]" started-at="2022-03-17T10:44:50 IST" name="closeDb" finished-at="2022-03-17T10:44:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========Database close Succesfull=======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeDb -->
+      </class> <!-- com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass -->
+    </test> <!-- Test-Runner-2 -->
+  </suite> <!-- Suite -->
+</testng-results>
