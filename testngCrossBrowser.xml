@@ -16,6 +16,7 @@
      
       <class name="com.crm.OrganizationTests.CreateOrgwithPOMwithBaseClass"/>
       <class name="com.crm.OrganizationTests.CreateOrganizationWithIndustryUtilityPOMwithBaseclass"/>
+      
     </classes>
   </test> <!-- Test -->
   
